@@ -45,7 +45,7 @@ ground.scale =  2;
 ground.x=width/2;
    ground.velocityX=-1;
   
-   mario = createSprite(50,height-150,20,50);
+   mario = createSprite(20,height-150,20,50);
   mario.addImage (marioImg);
   mario.scale = 0.09;
   //mario.setCollider("Circle",windowWidth,windowHeight-150,40);
@@ -129,7 +129,7 @@ function draw() {
   
   if( touches.length>0 || mousePressedOver(restart)) {
       reset();
-      touches=[];
+      touches=[];    
     }
   
   drawSprites();
